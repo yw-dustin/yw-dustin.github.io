@@ -1,33 +1,20 @@
 ---
 layout: archive
-title: "Publications"
-permalink: /publications/
+title: "Awards & Honors"
+permalink: /award/
 author_profile: true
+redirect_from:
+  - /awards/
 ---
-
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
 
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<ul>
+  <li><strong>Runner-Up (2nd Place)</strong>, ASME K-16 / IEEE EPS International Heat Sink Design Competition, 2024<br>
+  Among 2,000+ international teams, tied with ETH Zürich; I led a team of four.</li>
+  <li><strong>Granted Patent</strong>, High-Throughput Powder Spreading System for Laser Powder Bed Fusion, 2025</li>
+  <li><strong>Dream Scholarship</strong>, University of Nottingham Ningbo China, 2022–2023<br>
+  Awarded to the UNNC Chess Club under my presidency for our program proposal.</li>
+  <li><strong>Top 15%</strong> of the Aerospace Engineering cohort, University of Nottingham Ningbo China, 2020–2025</li>
+  <li><strong>Former professional Go (Weiqi) player</strong> with national-level competition results in China</li>
+</ul>
