@@ -1,14 +1,50 @@
 ---
 layout: archive
-title: "Portfolio"
+title: "Projects"
 permalink: /portfolio/
 author_profile: true
+redirect_from:
+  - /psortfolio/
 ---
 
 {% include base_path %}
 
+<h2>Encoding Investment Expertise as LLM Agent Skills</h2>
+<p><em>Personal project · ongoing</em></p>
+<ul>
+  <li>Distilling an experienced investor's A-share stock-selection methodology into a structured LLM skill system (SKILL.md), with rolling judgment ledgers and calibration logs so an AI agent can apply and self-check the method.</li>
+  <li>Built a parallel Python data pipeline for Chinese A-share market data using AKShare.</li>
+</ul>
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<h2>High-Throughput Powder Spreading for Laser Powder Bed Fusion</h2>
+<p><em>Final-year thesis · University of Nottingham Ningbo China · 2024–2025 · advisor: Dr. Yi Nie</em></p>
+<ul>
+  <li>Brought high-throughput screening ideas from the pharmaceutical industry into metal additive manufacturing.</li>
+  <li>Designed a 16-piston, point-to-point powder dosing module that deposits multiple alloy formulations in a single print cycle.</li>
+  <li>Implemented motion sequencing in C# (.NET); validated the layout in SolidWorks and 3DExperience.</li>
+  <li><strong>Outcome:</strong> granted patent; presented at CSIAED 2024.</li>
+</ul>
 
+<h2>Biomimetic Heat Sink Design · 2nd of 2,000+ Teams</h2>
+<p><em>ASME K-16 / IEEE EPS International Heat Sink Design Competition · 2023–2024 · team leader</em></p>
+<ul>
+  <li>Led a four-person team to 2nd place (tied with ETH Zürich) among 2,000+ international teams.</li>
+  <li>Combined biomimetic geometry with parametric design exploration; simulated in ANSYS Fluent.</li>
+  <li>Extended the surrogate-modeling method to ducted-fan blade design (first-author paper, under review).</li>
+  <li>📄 <a href="{{ base_path }}/files/Heat%20sink%20report.pdf">Final design report (PDF)</a></li>
+</ul>
+
+<h2>5-Axis CNC Machine Tool for Diamond Cutting</h2>
+<p><em>Industry collaboration project · 2022–2023 · student engineer</em></p>
+<ul>
+  <li>Designed and commissioned a 5-axis CNC machine with an industry client, from requirements to delivery.</li>
+  <li>Programmed tool-path generation in C# and implemented real-time multi-axis interpolation with RTCP.</li>
+  <li>Achieved coordinated motion via encoder-feedback synchronization; integrated limit switches and emergency stop.</li>
+</ul>
+
+<h2>Control &amp; Stability of a VTOL Drone</h2>
+<p><em>Research project · 2023 · advisor: Dr. Salman Ijaz</em></p>
+<ul>
+  <li>Derived forward and inverse kinematics and implemented attitude and path controllers in MATLAB/Simulink.</li>
+  <li>Validated closed-loop performance with hardware-in-the-loop simulation in FlightGear.</li>
+</ul>
