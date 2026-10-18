@@ -13,9 +13,9 @@ title                    : "Yiwei Wang's Homepage"
 title_separator          : "-"
 name                     : &name "Yiwei Wang"
 description              : &description "Personal website of Yiwei Wang, M.Sc. student at TUM working on robot learning."
-url                      : https://master-octopus.github.io
+url                      : https://yw-dustin.github.io
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-repository               : "Master-Octopus/Master-Octopus.github.io"
+repository               : "yw-dustin/yw-dustin.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
 #               If a field is blank the icon and link will not appear, otherwise it will be shown.
@@ -48,7 +48,7 @@ author:
   bitbucket        : # Username - Update with your username on the site
   codepen          : # Username
   dribbble         : # Username
-  github           : "Master-Octopus"
+  github           : "yw-dustin"
   kaggle           : # Username  
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
