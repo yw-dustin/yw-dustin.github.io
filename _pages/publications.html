@@ -1,36 +1,18 @@
 ---
 layout: archive
-title: "Publications"
+title: "Publications & Patents"
 permalink: /publications/
 author_profile: true
 ---
 
-{% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
-{% endif %}
-
 {% include base_path %}
 
-<!-- New style rendering if publication categories are defined -->
-{% if site.publication_category %}
-  {% for category in site.publication_category  %}
-    {% assign title_shown = false %}
-    {% for post in site.publications reversed %}
-      {% if post.category != category[0] %}
-        {% continue %}
-      {% endif %}
-      {% unless title_shown %}
-        <h2>{{ category[1].title }}</h2><hr />
-        {% assign title_shown = true %}
-      {% endunless %}
-      {% include archive-single.html %}
-    {% endfor %}
-  {% endfor %}
-{% else %}
-  {% for post in site.publications reversed %}
-    {% include archive-single.html %}
-  {% endfor %}
-{% endif %}
+<h2>Conference Papers</h2>
+<p><strong>[C1] Surrogate-based Multifidelity Robust Optimization for Ducted Fan Blade Aerodynamic Design</strong><br>
+<u><strong>Yiwei Wang</strong></u>, et al.<br>
+<em>IEEE International Conference on Mechanical, Electrical and Aerospace Engineering (MEAE)</em>, <strong>under review</strong></p>
 
-
-
+<h2>Patents</h2>
+<p><strong>[P1] High-Throughput Powder Spreading System for Laser Powder Bed Fusion of Multi-Compositional Alloys</strong><br>
+<u><strong>Yiwei Wang</strong></u>, Yi Nie<br>
+<em>Patent</em>, <strong>granted</strong></p>
