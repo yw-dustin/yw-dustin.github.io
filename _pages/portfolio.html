@@ -4,49 +4,82 @@ title: "Projects"
 permalink: /portfolio/
 author_profile: true
 redirect_from:
-  - /psortfolio/
+- /psortfolio/
 ---
 
 {% include base_path %}
 
-<h2>Encoding Investment Expertise as LLM Agent Skills</h2>
-<p><em>Personal project · ongoing</em></p>
-<ul>
-  <li>Distilling an experienced investor's A-share stock-selection methodology into a structured LLM skill system (SKILL.md), with rolling judgment ledgers and calibration logs so an AI agent can apply and self-check the method.</li>
-  <li>Built a parallel Python data pipeline for Chinese A-share market data using AKShare.</li>
-</ul>
+<style>
+.proj { border: 1px solid rgba(128,128,128,.25); border-radius: 10px; padding: 1.1em 1.4em 0.6em; margin: 0 0 1.6em; }
+.proj h2 { margin: 0 0 .25em; border: none; font-size: 1.25em; }
+.proj .meta { margin: 0 0 .5em; font-style: italic; opacity: .8; font-size: .9em; }
+.proj .tags { margin: 0 0 .6em; }
+.proj .tags span { display: inline-block; font-size: .72em; padding: .1em .65em; margin: 0 .35em .35em 0; border-radius: 999px; border: 1px solid rgba(128,128,128,.4); }
+.proj ul { margin-bottom: .6em; }
+.proj .figs { display: flex; flex-wrap: wrap; gap: 1em; margin: .4em 0 .8em; }
+.proj figure { flex: 1 1 260px; margin: 0; text-align: center; }
+.proj figure img { height: 240px; width: 100%; object-fit: contain; background: #fff; border-radius: 6px; border: 1px solid rgba(128,128,128,.2); }
+.proj figcaption { font-size: .75em; opacity: .75; margin-top: .3em; }
+.lead { font-size: .95em; margin-bottom: 1.4em; }
+</style>
 
-<h2>High-Throughput Powder Spreading for Laser Powder Bed Fusion</h2>
-<p><em>Final-year thesis · University of Nottingham Ningbo China · 2024–2025 · advisor: Dr. Yi Nie</em></p>
-<ul>
-  <li>Brought high-throughput screening ideas from the pharmaceutical industry into metal additive manufacturing.</li>
-  <li>Designed a 16-piston, point-to-point powder dosing module that deposits multiple alloy formulations in a single print cycle.</li>
-  <li>Implemented motion sequencing in C# (.NET); validated the layout in SolidWorks and 3DExperience.</li>
-  <li><strong>Outcome:</strong> granted patent; presented at CSIAED 2024.</li>
-</ul>
+<p class="lead">Hands-on projects in robotics, mechatronics and control — from multi-axis kinematics on real machines to an ongoing AI side project. Click an image to view it in full size.</p>
 
-<h2>Biomimetic Heat Sink Design · 2nd of 2,000+ Teams</h2>
-<p><em>ASME K-16 / IEEE EPS International Heat Sink Design Competition · 2023–2024 · team leader</em></p>
-<ul>
-  <li>Led a four-person team to 2nd place (tied with ETH Zürich) among 2,000+ international teams.</li>
-  <li>Combined biomimetic geometry with parametric design exploration; simulated in ANSYS Fluent.</li>
-  <li>Extended the surrogate-modeling method to ducted-fan blade design (first-author paper, under review).</li>
-  <li>📄 <a href="{{ base_path }}/files/Heat%20sink%20report.pdf">Final design report (PDF)</a></li>
-</ul>
-<p><img src="{{ base_path }}/images/heatsink.png" alt="Biomimetic heat sink design" style="max-width:100%;"></p>
-<p><img src="{{ base_path }}/images/MEAEpaper.png" alt="Multifidelity surrogate optimization workflow" style="max-width:100%;"></p>
-
+<div class="proj">
 <h2>5-Axis CNC Machine Tool for Diamond Cutting</h2>
-<p><em>Industry collaboration project · 2022–2023 · student engineer</em></p>
+<p class="meta">Industry collaboration · 2022–2023 · student engineer</p>
+<p class="tags"><span>Kinematics</span><span>Real-time control</span><span>C#</span><span>Mechatronics</span></p>
 <ul>
-  <li>Designed and commissioned a 5-axis CNC machine with an industry client, from requirements to delivery.</li>
-  <li>Programmed tool-path generation in C# and implemented real-time multi-axis interpolation with RTCP.</li>
-  <li>Achieved coordinated motion via encoder-feedback synchronization; integrated limit switches and emergency stop.</li>
+<li>Designed and commissioned a 5-axis CNC machine with an industry client, from requirements and budget to delivery.</li>
+<li>Programmed tool-path generation in C# and implemented <strong>real-time multi-axis interpolation with RTCP</strong>.</li>
+<li>Achieved coordinated motion via encoder-feedback synchronization; integrated limit switches and emergency stop on an Arduino I/O board.</li>
 </ul>
+</div>
 
-<h2>Control &amp; Stability of a VTOL Drone</h2>
-<p><em>Research project · 2023 · advisor: Dr. Salman Ijaz</em></p>
+<div class="proj">
+<h2>High-Throughput Powder Spreading for Laser Powder Bed Fusion</h2>
+<p class="meta">Final-year thesis · University of Nottingham Ningbo China · 2024–2025 · advisor: Dr. Yi Nie</p>
+<p class="tags"><span>Mechanism design</span><span>Motion sequencing</span><span>Additive manufacturing</span><span>Granted patent</span></p>
 <ul>
-  <li>Derived forward and inverse kinematics and implemented attitude and path controllers in MATLAB/Simulink.</li>
-  <li>Validated closed-loop performance with hardware-in-the-loop simulation in FlightGear.</li>
+<li>Brought high-throughput screening ideas from the pharmaceutical industry into metal additive manufacturing.</li>
+<li>Designed a <strong>16-piston, point-to-point powder dosing module</strong> that deposits multiple alloy formulations in a single print cycle.</li>
+<li>Implemented motion sequencing and synchronization in C# (.NET); validated the layout in SolidWorks and 3DExperience.</li>
+<li><strong>Outcome:</strong> granted patent; presented at CSIAED 2024.</li>
 </ul>
+</div>
+
+<div class="proj">
+<h2>Biomimetic Heat Sink Design · 2nd of 2,000+ Teams</h2>
+<p class="meta">ASME K-16 / IEEE EPS International Heat Sink Design Competition · 2023–2024 · team leader</p>
+<p class="tags"><span>CFD</span><span>Surrogate modeling</span><span>Optimization</span><span>Team lead</span></p>
+<ul>
+<li>Led a four-person team to <strong>2nd place (tied with ETH Zürich)</strong> among 2,000+ international teams.</li>
+<li>Combined biomimetic geometry with parametric design exploration; simulated in ANSYS Fluent.</li>
+<li>Extended the surrogate-modeling method to ducted-fan blade design (first-author paper, under review).</li>
+<li>📄 <a href="{{ base_path }}/files/Heat%20sink%20report.pdf">Final design report (PDF)</a></li>
+</ul>
+<div class="figs">
+<figure><a href="{{ base_path }}/images/heatsink.png"><img src="{{ base_path }}/images/heatsink.png" alt="Biomimetic heat sink design"></a><figcaption>Final biomimetic heat sink geometry</figcaption></figure>
+<figure><a href="{{ base_path }}/images/MEAEpaper.png"><img src="{{ base_path }}/images/MEAEpaper.png" alt="Multifidelity surrogate optimization workflow"></a><figcaption>Multifidelity surrogate-based robust optimization workflow</figcaption></figure>
+</div>
+</div>
+
+<div class="proj">
+<h2>Control &amp; Stability of a VTOL Drone</h2>
+<p class="meta">Research project · 2023 · advisor: Dr. Salman Ijaz</p>
+<p class="tags"><span>Kinematics</span><span>PID control</span><span>MATLAB/Simulink</span><span>HIL simulation</span></p>
+<ul>
+<li>Derived forward and inverse kinematics and implemented attitude and path controllers in MATLAB/Simulink.</li>
+<li>Validated closed-loop performance with hardware-in-the-loop simulation in FlightGear; tuned PID gains for trajectory tracking under disturbances.</li>
+</ul>
+</div>
+
+<div class="proj">
+<h2>Encoding Investment Expertise as LLM Agent Skills</h2>
+<p class="meta">Personal side project · ongoing</p>
+<p class="tags"><span>LLM agents</span><span>Python</span><span>Data pipelines</span></p>
+<ul>
+<li>Distilling an experienced investor's stock-selection methodology into a structured LLM skill system, with rolling judgment ledgers and calibration logs so an AI agent can apply and self-check the method.</li>
+<li>Built a parallel Python data pipeline for Chinese A-share market data using AKShare.</li>
+</ul>
+</div>
